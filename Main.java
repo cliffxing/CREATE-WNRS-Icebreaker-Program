@@ -104,7 +104,7 @@ public class Main
                 System.out.println("The icebreaker will have "+numPlayers+" players.");
                 System.out.println("Is this correct? (please type 'Y' to confirm, and anything else to change answer)");
                 beginInput = scan.nextLine();
-                if (beginInput.equals("Y"))
+                if (beginInput.equals("Y") || beginInput.equals("y"))
                 {
                     isDone = true;
                     break;
@@ -146,7 +146,7 @@ public class Main
                 {
                     playerRandom = int1.nextInt(numPlayers)+1;
                 }
-
+                questionRandom = int2.nextInt(questions.length);
                 System.out.println("----------------------------");
                 System.out.println("CREATE WNRS Icebreaker: Round "+i);
                 System.out.println("Player "+playerRandom+" asks Player "+i);
@@ -175,3 +175,7 @@ public class Main
     }
 
 }
+
+
+
+
